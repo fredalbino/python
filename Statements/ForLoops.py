@@ -47,3 +47,45 @@ for num in my_list:
         print(f'Unrecognizable value: {num}')
 
 print(list_sum)
+
+
+# Printing even and odd numbers differently.
+my_num_list = [1,2,3,4,5,6]
+
+for num in my_num_list:
+    if num % 2 == 0:
+        print('The even number is {}!'.format(num))
+    else:
+        print(f'Odd number: {num}')
+
+# Printing the sum
+list_sum = 0
+for num in my_num_list:
+    list_sum = list_sum + num
+print(list_sum)
+
+# Iterate over string
+mystring = 'Hello World'
+for letter in mystring:
+    print(letter)
+
+# You can also iterate over a tuple.
+tup = (1,2,3)
+for item in tup:
+    print(item);
+
+# Tuple Enpacking
+# Able to break down a tuple and use individual pieces.
+new_tup = [('Fred',1),('Felipe',2),('Jasma',3)];
+
+for a,b in new_tup:
+    print(a + ' has ' + str(b) + ' goals in the season!')
+
+# Iterate over dictionaries
+# You get a returned set of tuples, where you can use the same technique of tuple enpacking.
+d = {'k1': 1, 'k2': 2, 'k3': 3 , 'k4': 4 }
+for item in d.items():
+    print(item)
+
+for key,value in d.items():
+    print(key + ' has ' + str(value) + ' schools.')
